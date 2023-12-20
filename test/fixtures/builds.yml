@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  build_name: MyString
+  character_name: MyString
+  character_class: MyString
+  user_id: 1
+  gloves_rune_id: 1
+  chest_rune_id: 1
+  legs_rune_id: 1
+
+two:
+  build_name: MyString
+  character_name: MyString
+  character_class: MyString
+  user_id: 1
+  gloves_rune_id: 1
+  chest_rune_id: 1
+  legs_rune_id: 1
