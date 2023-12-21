@@ -19,8 +19,11 @@ class BuildsControllerTest < ActionDispatch::IntegrationTest
 
   test "create" do
     assert_difference "Build.count", 1 do
-      post "/builds.json", params: { build_name: "Test", character_name: "Test", character_class: "Druid", user_id: 1, gloves_rune_id: 5, chest_rune_id: 1, legs_rune_id: 9 },
-                           headers: { "Authorization" => "Bearer #{@jwt}" }
+      post "/builds.json",
+        headers: { "Authorization" => "Bearer #{@jwt}" },
+        params: { build_name: "Test", user_id: User.first.id, legs_rune_id: 4, chest_rune_id: 1, legs_rune_id: 9 }
+
+      data = JSON.parse(response.body)
       assert_response 200
     end
   end
@@ -31,7 +34,7 @@ class BuildsControllerTest < ActionDispatch::IntegrationTest
     assert_response 200
 
     data = JSON.parse(response.body)
-    assert_equal ["id", "build_name", "character_name", "character_class", "user_id", "gloves_rune_id", "chest_rune_id", "legs_rune_id", "created_at", "updated_at"], data.keys
+    assert_equal ["id", "build_name", "character_name", "character_class", "user_id", "gloves_rune", "chest_rune", "legs_rune", "created_at", "updated_at"], data.keys
   end
 
   test "update" do
