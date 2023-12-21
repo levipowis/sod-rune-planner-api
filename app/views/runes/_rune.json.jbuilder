@@ -1,5 +1,6 @@
 json.id rune.id
 json.name rune.name
+json.character_class rune.character_class
 json.rune_slot rune.rune_slot
 json.image_url rune.image_url
 json.description rune.description

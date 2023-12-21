@@ -8,4 +8,5 @@ Rails.application.routes.draw do
 
   # Runes routes
   get "/runes" => "runes#index"
+  get "/runes/:id" => "runes#show"
 end
