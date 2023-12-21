@@ -23,4 +23,13 @@ class BuildsControllerTest < ActionDispatch::IntegrationTest
     data = JSON.parse(response.body)
     assert_equal ["id", "build_name", "character_name", "character_class", "user_id", "gloves_rune_id", "chest_rune_id", "legs_rune_id", "created_at", "updated_at"], data.keys
   end
+
+  test "update" do
+    build = Build.first
+    patch "/builds/#{build.id}.json", params: { build_name: "Updated name" }
+    assert_response 200
+
+    data = JSON.parse(response.body)
+    assert_equal "Updated name", data["build_name"]
+  end
 end
