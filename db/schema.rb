@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_12_20_195513) do
+ActiveRecord::Schema[7.0].define(version: 2023_12_21_003620) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -22,6 +22,17 @@ ActiveRecord::Schema[7.0].define(version: 2023_12_20_195513) do
     t.integer "gloves_rune_id"
     t.integer "chest_rune_id"
     t.integer "legs_rune_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "runes", force: :cascade do |t|
+    t.string "name"
+    t.string "character_class"
+    t.string "rune_slot"
+    t.string "image_url"
+    t.text "description"
+    t.text "instructions"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
