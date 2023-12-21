@@ -15,4 +15,12 @@ class BuildsControllerTest < ActionDispatch::IntegrationTest
       assert_response 200
     end
   end
+
+  test "show" do
+    get "/builds/#{Build.first.id}.json"
+    assert_response 200
+
+    data = JSON.parse(response.body)
+    assert_equal ["id", "build_name", "character_name", "character_class", "user_id", "gloves_rune_id", "chest_rune_id", "legs_rune_id", "created_at", "updated_at"], data.keys
+  end
 end

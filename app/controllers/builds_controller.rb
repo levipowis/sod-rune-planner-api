@@ -16,4 +16,9 @@ class BuildsController < ApplicationController
     )
     render :show
   end
+
+  def show
+    @build = Build.find_by(id: params[:id])
+    render :show
+  end
 end
