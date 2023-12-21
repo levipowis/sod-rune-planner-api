@@ -35,4 +35,10 @@ class BuildsController < ApplicationController
     )
     render :show
   end
+
+  def destroy
+    @build = Build.find_by(id: params[:id])
+    @build.destroy
+    render json: { message: "Build destroyed successfully" }
+  end
 end

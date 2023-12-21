@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   post "/builds" => "builds#create"
   get "/builds/:id" => "builds#show"
   patch "builds/:id" => "builds#update"
+  delete "builds/:id" => "builds#destroy"
 end
