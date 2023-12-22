@@ -21,7 +21,7 @@ class BuildsControllerTest < ActionDispatch::IntegrationTest
     assert_difference "Build.count", 1 do
       post "/builds.json",
         headers: { "Authorization" => "Bearer #{@jwt}" },
-        params: { build_name: "Test", user_id: User.first.id, legs_rune_id: 4, chest_rune_id: 1, legs_rune_id: 9 }
+        params: { build_name: "Test", user_id: User.first.id, character_class: "Druid", character_name: "Test", gloves_rune_id: Rune.first.id, chest_rune_id: Rune.first.id, legs_rune_id: Rune.first.id }
 
       data = JSON.parse(response.body)
       assert_response 200

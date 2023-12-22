@@ -15,3 +15,11 @@ two:
   image_url: MyString
   description: MyText
   instructions: MyText
+
+three:
+  name: MyString
+  character_class: MyString
+  rune_slot: MyString
+  image_url: MyString
+  description: MyText
+  instructions: MyText
