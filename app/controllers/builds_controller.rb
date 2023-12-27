@@ -2,7 +2,7 @@ class BuildsController < ApplicationController
   before_action :authenticate_user
 
   def index
-    @builds = Build.all
+    @builds = current_user.builds
     render :index
   end
 
