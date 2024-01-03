@@ -159,3 +159,22 @@
 # Rune.create!(name: "Exorcist", character_class: "Paladin", rune_slot: "Legs", image_url: "https://cdn.sixtyupgrades.com/icons/spell_holy_retribution.jpg", description: "Exorcism can now be cast on any target and has 100% increased critical strike chance against Undead and Demons.", instructions: nil)
 # Rune.create!(name: "Inspiration Exemplar", character_class: "Paladin", rune_slot: "Legs", image_url: "https://cdn.sixtyupgrades.com/icons/spell_holy_power.jpg", description: "Your inspiring presence periodically dispels Fear and Sleep effects on nearby party members.", instructions: nil)
 # Rune.create!(name: "Rebuke", character_class: "Paladin", rune_slot: "Legs", image_url: "https://cdn.sixtyupgrades.com/icons/inv_relics_totemofrage.jpg", description: "Interrupts spellcasting and prevents any spell in that school from being cast for 2 sec.", instructions: nil)
+
+# Warlock Gloves Runes
+# Rune.create!(name: "Chaos Bolt", character_class: "Warlock", rune_slot: "Gloves", image_url: "https://cdn.sixtyupgrades.com/icons/ability_warlock_chaosbolt.jpg", description: "Sends a bolt of chaotic fire at the enemy, dealing 225 to 286 Fire damage.  Chaos Bolt always hits, cannot be resisted, and its knowledge causes all your Fire spells to pierce through absorption effects. Chaos Bolt gains a high chance to be resisted when used against monsters 4 or more levels above your level.", instructions: nil)
+# Rune.create!(name: "Haunt", character_class: "Warlock", rune_slot: "Gloves", image_url: "https://cdn.sixtyupgrades.com/icons/ability_warlock_haunt.jpg", description: "Unleash a ghostly soul on an enemy, dealing 108 to 127 damage, and increasing all Shadow damage over time you deal to that target by 20%. When the Haunt ends or is dispelled, you will be healed for all the damage it dealt to your target.", instructions: nil)
+# Rune.create!(name: "Metamorphosis", character_class: "Warlock", rune_slot: "Gloves", image_url: "https://cdn.sixtyupgrades.com/icons/spell_nature_wispsplode.jpg", description: "Transform into a Demon, increasing Armor by 500%, reducing the chance you will be critically hit by 6%, increasing your threat by 50%, increasing mana gained from Life Tap by 100%, transforming the functionality of some of your abilities, and granting some new abilities:
+
+# Searing Pain: Now instant.
+
+# Shadow Bolt: Becomes Shadow Cleave, a Shadow melee attack that hits up to 3 nearby enemies, but has a 6 sec cooldown.
+
+# Fear: Replaced with Menace.
+# Taunts the target to attack you, but has no effect if the target is already attacking you.
+
+# Demon Charge
+# Charge an enemy and stun it for 1 sec.  Cannot be used in combat.
+
+# Demonic Howl
+# Forces all nearby enemies to focus attacks on you for 6 sec.", instructions: nil)
+# Rune.create!(name: "Shadow Bolt Volley", character_class: "Warlock", rune_slot: "Gloves", image_url: "https://cdn.sixtyupgrades.com/icons/spell_shadow_blackplague.jpg", description: "Your Shadow Bolt now strikes up to 5 targets within a chain distance of 10 yards, but for 20% reduced damage.", instructions: nil)
