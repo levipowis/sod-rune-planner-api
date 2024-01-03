@@ -139,3 +139,8 @@
 # 3 points: 120 Damage
 # 4 points: 160 Damage
 # 5 points: 200 Damage", instructions: nil)
+
+# Paladin Gloves Runes
+# Rune.create!(name: "Beacon of Light", character_class: "Paladin", rune_slot: "Gloves", image_url: "https://cdn.sixtyupgrades.com/icons/ability_paladin_beaconoflight.jpg", description: "The target becomes a Beacon of Light to all members of your party or raid within a 40 yard radius.  Any heals you cast on party or raid members will also heal the Beacon for 100% of the amount healed.  Only one target can be the Beacon of Light at a time. Lasts 1 min.", instructions: nil)
+# Rune.create!(name: "Crusader Strike", character_class: "Paladin", rune_slot: "Gloves", image_url: "https://cdn.sixtyupgrades.com/icons/spell_holy_crusaderstrike.jpg", description: "An instant strike that causes 75% weapon damage and regenerates 2% of your maximum mana.", instructions: nil)
+# Rune.create!(name: "Hand of Reckoning", character_class: "Paladin", rune_slot: "Gloves", image_url: "https://cdn.sixtyupgrades.com/icons/spell_holy_unyieldingfaith.jpg", description: "Taunts the target to attack you, but has no effect if the target is already attacking you. While you know this ability, the threat bonus from Righteous Fury is increased to 80% and Righteous Fury causes you to gain mana when healed by others equal to 25% of the amount healed. Additionally, while Righteous Fury is active, damage which takes you below 35% health is reduced by 20%. Righteous Fury will remain active until cancelled.", instructions: nil)
