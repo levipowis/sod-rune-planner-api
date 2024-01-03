@@ -178,3 +178,9 @@
 # Demonic Howl
 # Forces all nearby enemies to focus attacks on you for 6 sec.", instructions: nil)
 # Rune.create!(name: "Shadow Bolt Volley", character_class: "Warlock", rune_slot: "Gloves", image_url: "https://cdn.sixtyupgrades.com/icons/spell_shadow_blackplague.jpg", description: "Your Shadow Bolt now strikes up to 5 targets within a chain distance of 10 yards, but for 20% reduced damage.", instructions: nil)
+
+# Warlock Chest Runes
+# Rune.create!(name: "Demonic Tactics", character_class: "Warlock", rune_slot: "Chest", image_url: "https://cdn.sixtyupgrades.com/icons/spell_shadow_demonictactics.jpg", description: "Increases the melee and spell critical strike chance of you and your pet by 10%.", instructions: nil)
+# Rune.create!(name: "Lake of Fire", character_class: "Warlock", rune_slot: "Chest", image_url: "https://cdn.sixtyupgrades.com/icons/spell_fire_selfdestruct.jpg", description: "Rain of Fire also leaves a Lake of Fire on the ground that increases all Fire damage you deal and your Demon pet deals to affected enemies by 40% for 15 sec.", instructions: nil)
+# Rune.create!(name: "Master Channeler", character_class: "Warlock", rune_slot: "Chest", image_url: "https://cdn.sixtyupgrades.com/icons/spell_shadow_lifedrain.jpg", description: "Your Drain Life is no longer channeled, lasts 15 sec with a 15 sec cooldown, costs 100% more mana, and heals you for 50% more each time it deals damage.", instructions: nil)
+# Rune.create!(name: "Soul Siphon", character_class: "Warlock", rune_slot: "Chest", image_url: "https://cdn.sixtyupgrades.com/icons/spell_shadow_lifedrain02.jpg", description: "Increases the amount drained by your Drain Life and Drain Soul spells by an additional 6% for each of your Warlock Shadow effects afflicting the target, up to a maximum of 18% additional effect.", instructions: nil)
