@@ -1,11 +1,13 @@
 class BuildsController < ApplicationController
   before_action :authenticate_user
 
+  # Index action that gets all current_user's builds
   def index
     @builds = current_user.builds
     render :index
   end
 
+  # Create action
   def create
     @build = Build.create(
       build_name: params[:build_name],
@@ -19,11 +21,13 @@ class BuildsController < ApplicationController
     render :show
   end
 
+  # Show action
   def show
     @build = Build.find_by(id: params[:id])
     render :show
   end
 
+  # Update action
   def update
     @build = Build.find_by(id: params[:id])
     @build.update(
@@ -38,6 +42,7 @@ class BuildsController < ApplicationController
     render :show
   end
 
+  # Destroy action
   def destroy
     @build = Build.find_by(id: params[:id])
     @build.destroy
