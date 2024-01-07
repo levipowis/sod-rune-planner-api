@@ -1,24 +1,7 @@
-# README
+# SoD Rune Planner API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Build with Ruby on Rails & PostgreSQL
 
-Things you may want to cover:
+This API is built to serve the SoD Rune Planner Frontend.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+It is a RESTful CRUD API using a PostgreSQL database.
