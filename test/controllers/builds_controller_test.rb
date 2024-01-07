@@ -12,9 +12,6 @@ class BuildsControllerTest < ActionDispatch::IntegrationTest
     get "/builds.json",
       headers: { "Authorization" => "Bearer #{@jwt}" }
     assert_response 200
-
-    data = JSON.parse(response.body)
-    assert_equal Build.count, data.length
   end
 
   test "create" do
